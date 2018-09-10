@@ -2,5 +2,5 @@
 def prime?(num)
   return true if num < 2
   
-  (2..num).any? { |n| n %  }
+  (2..num).any? { |n| num % n  }
 end

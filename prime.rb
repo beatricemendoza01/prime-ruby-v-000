@@ -1,5 +1,12 @@
 # Add  code here!
 def prime?(num)
-  return true if num < 2
-  return (2..num).any? { |n| num % n == 0 }
+  if num <= 1
+      return false
+    else 
+        if (2...Math.sqrt(n).floor).any? { |i| n % i  == 0}
+            return false
+        else
+            return true
+        end 
+    end
 end
